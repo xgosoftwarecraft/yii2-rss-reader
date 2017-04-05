@@ -23,8 +23,6 @@
         "psr-4": {
             "xgosoftwarecraft\\RssFeed\\": ""
         }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
-
+    }
+    
 }
