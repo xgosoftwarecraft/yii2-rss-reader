@@ -19,10 +19,12 @@
     "require": {
         "yiisoft/yii2": "~2"
     },
-	"autoload": {
+    "autoload": {
         "psr-4": {
             "xgosoftwarecraft\\RssFeed\\": ""
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 
 }
