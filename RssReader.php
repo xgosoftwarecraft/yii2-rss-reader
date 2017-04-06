@@ -17,12 +17,11 @@ class RssReader {
     public function read($sources) {
         $this->sources = $sources;
 
-        foreach ($sources as $sc) {
+        foreach ($sources as $sc => $au) {
             $xml = simplexml_load_file($sc);
 
-            echo '<pre>';
-
             foreach ($xml->xpath('//item') as $item) {
+                $item->author = $au;
                 array_push($this->items, $item);
             }
         }
